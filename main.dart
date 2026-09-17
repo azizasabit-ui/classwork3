@@ -28,3 +28,40 @@ class Library {
     );
   }
 }
+void main() {
+  final library = Library();
+
+  library.addBook(
+    Book(
+      title: 'Harry Potter',
+      author: 'J.K. Rowling',
+      price: 5000.0,
+    ),
+  );
+
+  library.addBook(
+    Book(
+      title: 'The Hobbit',
+      author: 'J.R.R. Tolkien',
+      price: 4500.0,
+      isBorrowed: true,
+    ),
+  );
+
+  library.addBook(
+    Book(
+      title: '1984',
+      author: 'George Orwell',
+      price: 3500.0,
+    ),
+  );
+
+  library.addBook(
+    Book(
+      title: 'Clean Code',
+      author: 'Robert C. Martin',
+      price: 7000.0,
+      isBorrowed: true,
+    ),
+  );
+}
