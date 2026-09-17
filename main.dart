@@ -64,4 +64,19 @@ void main() {
       isBorrowed: true,
     ),
   );
+   print('=== Available Books ===');
+
+  final availableBooks = library.getAvailableBooks();
+
+  for (final book in availableBooks) {
+    print(
+      '${book.title} by ${book.author} - ${book.price} ₸',
+    );
+  }
+
+  print('');
+  print(
+    'Total collection value: '
+    '${library.getTotalValue()} ₸',
+  );
 }
